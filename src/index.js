@@ -1,3 +1,5 @@
+// https://blog.logrocket.com/building-vue-3-component-library/
+
 import components from "./components"
 
 const plugin = {

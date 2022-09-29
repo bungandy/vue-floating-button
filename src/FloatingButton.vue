@@ -81,7 +81,7 @@ export default {
 .vue-floating-button-main{
   .vue-floating-button-overlay{
     position: fixed;
-    z-index: 999;
+    z-index: 9998;
     top: 0;
     left: 0;
     right: 0;
@@ -90,12 +90,16 @@ export default {
   }
   .vue-floating-button{
     position: fixed;
-    z-index: 2147483002;
+    z-index: 9999;
     right: 24px;
-    bottom: 48px;
+    bottom: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media (min-width: 768px) {
+      bottom: 48px;
+    }
 
     &-content{
       font-family: inherit;
